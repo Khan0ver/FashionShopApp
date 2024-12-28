@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FashionShop</string>
+    <string name="personal_information">ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="email_agreement">Я ХОЧУ ПОЛУЧАТЬ НОВОСТИ И ИНФОРМАЦИЮ НА ПОЧТУ</string>
+    <string name="agree_with_terms">Я СОГЛАСЕН С УСЛОВИЯМИ ПОЛЬЗОВАНИЯ</string>
+    <string name="create_account">СОЗДАТЬ АККАУНТ</string>
+    <string name="login">ВХОД</string>
+    <string name="sign_in_to_your_account">ВХОД В СВОЙ АККАУНТ</string>
+</resources>

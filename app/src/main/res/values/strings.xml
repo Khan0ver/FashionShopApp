@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FashionShop</string>
+    <string name="menu">МЕНЮ</string>
+    <string name="personal_information">PERSONAL INFORMATION</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="email_agreement">I WANT TO RECEIVE NEWS AND INFORMATION VIA EMAIL</string>
+    <string name="agree_with_terms">I AGREE WITH TERMS &amp; CONDITIONS</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="login">LOG IN</string>
+    <string name="sign_in_to_your_account">SIGN IN TO YOUR ACCOUNT</string>
+</resources>
