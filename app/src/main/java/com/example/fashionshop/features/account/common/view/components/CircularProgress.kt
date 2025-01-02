@@ -1,4 +1,4 @@
-package com.example.fashionshop.features.auth.view.components
+package com.example.fashionshop.features.account.common.view.components
 
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.CircularProgressIndicator

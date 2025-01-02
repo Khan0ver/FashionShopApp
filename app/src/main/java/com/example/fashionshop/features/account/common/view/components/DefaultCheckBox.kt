@@ -1,4 +1,4 @@
-package com.example.fashionshop.features.auth.view.components
+package com.example.fashionshop.features.account.common.view.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 @Composable
 fun DefaultCheckBox(
     checkedMutableState: MutableState<Boolean>,
-    text: String
+    text: String,
 ) {
     Row(
         modifier = Modifier

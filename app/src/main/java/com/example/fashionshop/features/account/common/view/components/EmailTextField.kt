@@ -1,4 +1,4 @@
-package com.example.fashionshop.features.auth.view.components
+package com.example.fashionshop.features.account.common.view.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding

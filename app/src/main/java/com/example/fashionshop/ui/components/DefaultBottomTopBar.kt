@@ -5,10 +5,10 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountBox
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.filled.ShoppingCart
+import androidx.compose.material.icons.outlined.AccountBox
+import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.Search
+import androidx.compose.material.icons.outlined.ShoppingCart
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -20,11 +20,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.fashionshop.R
 
 @Composable
-fun DefaultBottomAppBar() {
+fun DefaultBottomAppBar(navController: NavController) {
     BottomAppBar(
+        modifier = Modifier.height(96.dp),
         actions = {
             Row(
                 modifier = Modifier
@@ -34,22 +36,26 @@ fun DefaultBottomAppBar() {
                 horizontalArrangement = Arrangement.SpaceBetween,
             ) {
                 IconButton(onClick = {}) {
-                    Icon(Icons.Filled.Home, null)
+                    Icon(Icons.Outlined.Home, null)
                 }
                 IconButton(onClick = {}) {
-                    Icon(Icons.Filled.Search, null)
+                    Icon(Icons.Outlined.Search, null)
                 }
-                TextButton(onClick = {}) {
+                TextButton(onClick = {
+                    navController.navigate("menu")
+                }) {
                     Text(
                         text = stringResource(R.string.menu),
                         style = MaterialTheme.typography.titleSmall
                     )
                 }
                 IconButton(onClick = {}) {
-                    Icon(Icons.Filled.ShoppingCart, null)
+                    Icon(Icons.Outlined.ShoppingCart, null)
                 }
-                IconButton(onClick = {}) {
-                    Icon(Icons.Filled.AccountBox, null)
+                IconButton(onClick = {
+                    navController.navigate("profile")
+                }) {
+                    Icon(Icons.Outlined.AccountBox, null)
                 }
             }
         }

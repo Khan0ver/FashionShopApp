@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.dagger.hilt)
     kotlin("kapt")
     alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -53,6 +54,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -91,4 +95,7 @@ dependencies {
     //compose navigation
     implementation(libs.androidx.navigation.compose)
     implementation(libs.dagger.hilt.navigation)
+
+    //serialization json
+    implementation(libs.kotlinx.serialization.json)
 }
